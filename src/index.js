@@ -21,7 +21,7 @@ app.get('/user/:id', (req, res) =>{
 });
 
 app.delete('/user/:id', (req, res) => {
-        users[0] ? res.status(200).send(users) : res.status(204).send();
+        users[0] ? res.status(202).send(users) : res.status(204).send();
         users.pop();
 });
 
